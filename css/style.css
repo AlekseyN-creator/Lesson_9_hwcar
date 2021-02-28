@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+
+/* Обнуляющие стили */
+/* убираем отступы внеш/внут, рамки
+ и прибавление рамок */
+*,
+::before,
+::after {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	box-sizing: border-box;
+}
+/* убираем декорацию у пунктов списка */
+li {
+	list-style: none;
+}
+/* убираем подчеркивание ссылок */
+a,
+a:visited {
+	text-decoration: none;
+}
+/* убираем декорацию ссылок 
+при наведении */
+a:hover {
+	text-decoration: none;
+}
+/* обнуляем заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-style: inherit;
+	font-size: inherit;
+}
+/* убираем фантомный отступ у картинки */
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	color: #000;
+}
+/* Обнуляющие стили закончились */
+/*===================================*/
+.wrapper {
+	width: 100%;
+	background: url("../img/bg_repeat.jpg");
+	height: 1080px;
+	display: inline-block;
+}
+.car {
+	width: 450px;
+	margin: 150px 200px 0px 400px;
+}
+.windows {
+	border-bottom: 100px solid rgba(100, 148, 237, 0.801);
+	border-left: 10px solid transparent;
+	border-right: 100px solid transparent;
+	border-radius: 40px 40px 0px 0px;
+	position: relative;
+}
+.window-1 {
+	width: 195px;
+	height: 90px;
+	border-radius: 50px 173px 50px 70px / 25px 100px 25px 36px;
+	background: linear-gradient(
+		135deg,
+		rgba(208, 228, 247, 1) 0%,
+		rgba(115, 177, 231, 1) 24%,
+		rgba(10, 119, 213, 1) 50%,
+		rgba(83, 159, 225, 1) 79%,
+		rgba(135, 188, 234, 1) 100%
+	);
+	border: 1px solid black;
+	top: 8px;
+	left: 200px;
+	position: absolute;
+}
+.window-2 {
+	width: 170px;
+	height: 80px;
+	border-radius: 30px;
+	background: linear-gradient(
+		135deg,
+		rgba(208, 228, 247, 1) 0%,
+		rgba(115, 177, 231, 1) 24%,
+		rgba(10, 119, 213, 1) 50%,
+		rgba(83, 159, 225, 1) 79%,
+		rgba(135, 188, 234, 1) 100%
+	);
+	border: 1px solid black;
+	position: absolute;
+	top: 10px;
+	left: 25px;
+}
+.window-1:hover {
+	background: url("../img/avatar_3.jpg") 50% 0 no-repeat;
+	background-color: rgba(21, 47, 68, 0.459);
+}
+.window-2:hover {
+	background: linear-gradient(
+		135deg,
+		rgba(30, 87, 153, 0) 0%,
+		rgba(30, 87, 153, 0.8) 15%,
+		rgba(30, 87, 153, 1) 19%,
+		rgba(30, 87, 153, 1) 20%,
+		rgba(41, 137, 216, 1) 50%,
+		rgba(30, 87, 153, 1) 80%,
+		rgba(30, 87, 153, 1) 81%,
+		rgba(30, 87, 153, 0.8) 85%,
+		rgba(30, 87, 153, 0) 100%
+	);
+}
+.body {
+	width: 600px;
+	height: 150px;
+	background-color: rgba(255, 0, 0, 0.753);
+	border-radius: 0px 40px 40px 40px;
+	position: relative;
+	display: inline-block;
+	border: 1px solid black;
+}
+.wheel-1 {
+	width: 150px;
+	height: 150px;
+	background-color: black;
+	position: absolute;
+	border-radius: 50%;
+	top: 80px;
+	left: 430px;
+}
+.wheel-2 {
+	width: 150px;
+	height: 150px;
+	background-color: black;
+	position: absolute;
+	border-radius: 50%;
+	right: 440px;
+	top: 80px;
+}
+.wheel-3 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(124, 120, 120);
+	position: absolute;
+	border-radius: 50%;
+	top: 105px;
+	left: 455px;
+}
+.wheel-4 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(124, 120, 120);
+	position: absolute;
+	border-radius: 50%;
+	right: 465px;
+	top: 105px;
+}
+.wheel-5 {
+	width: 50px;
+	height: 150px;
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	border-radius: 10px;
+	bottom: 60px;
+	left: -50px;
+}
+
+.front-light {
+	width: 60px;
+	height: 50px;
+	border-radius: 10px 20px 0px 10px;
+	background: linear-gradient(
+		135deg,
+		rgba(252, 251, 188, 1) 0%,
+		rgba(252, 252, 78, 1) 50%,
+		rgba(248, 248, 0, 1) 51%,
+		rgba(251, 251, 147, 1) 100%
+	);
+	border: 1px solid black;
+	box-shadow: 80px 30px 40px 50px rgba(255, 230, 0, 0.788);
+	position: absolute;
+	left: 538px;
+	top: 10px;
+	border-right: none;
+}
+.front-light:hover {
+	box-shadow: 100px 30px 80px 90px rgba(255, 230, 0, 0.788);
+}
+
+.rear-light {
+	width: 20px;
+	height: 50px;
+	border-radius: 0px 10px 10px 0px;
+	background-color: orangered;
+	border: 1px solid black;
+	box-shadow: 0px -10px 20px 20px red;
+	position: absolute;
+}
+.rear-light:hover {
+	box-shadow: -20px -20px 40px 40px red;
+}
+
+.door {
+	width: 220px;
+	height: 140px;
+	border: 1px solid black;
+	border-radius: 20px;
+	position: absolute;
+	top: 255px;
+	left: 600px;
+	text-align: center;
+	font-size: 130px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: rgb(0, 0, 0);
+	font-weight: 900;
+	z-index: 5;
+}
+.door-circle {
+	width: 135px;
+	height: 135px;
+	border-radius: 50%;
+	background-color: gold;
+	position: absolute;
+	top: 257px;
+	left: 642px;
+	border: 1px solid black;
+}
